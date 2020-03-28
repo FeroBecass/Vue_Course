@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c4e6eea8-361e-4b35-8868-0f36669e9820" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZfMBW7GsBrlfBfwoFjveHjdEST" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../section_12" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c4e6eea8-361e-4b35-8868-0f36669e9820" name="Default Changelist" comment="" />
+      <created>1585225559215</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585225559215</updated>
+      <workItem from="1585225560357" duration="6445000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2655" y="291" width="424" height="491" key="FileChooserDialogImpl" timestamp="1585236260976">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2655" y="291" key="FileChooserDialogImpl/70.27.1850.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585236260976" />
+    <state x="778" y="311" width="424" height="491" key="FileChooserDialogImpl/70.27.1850.1053/1920.0.1920.1080@70.27.1850.1053" timestamp="1585228686207" />
+    <state width="1827" height="275" key="GridCell.Tab.0.bottom" timestamp="1585236261974">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1827" height="275" key="GridCell.Tab.0.bottom/70.27.1850.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585236261974" />
+    <state width="1827" height="275" key="GridCell.Tab.0.bottom/70.27.1850.1053/1920.0.1920.1080@70.27.1850.1053" timestamp="1585225591765" />
+    <state width="1827" height="275" key="GridCell.Tab.0.center" timestamp="1585236261974">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1827" height="275" key="GridCell.Tab.0.center/70.27.1850.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585236261974" />
+    <state width="1827" height="275" key="GridCell.Tab.0.center/70.27.1850.1053/1920.0.1920.1080@70.27.1850.1053" timestamp="1585225591765" />
+    <state width="1827" height="275" key="GridCell.Tab.0.left" timestamp="1585236261974">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1827" height="275" key="GridCell.Tab.0.left/70.27.1850.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585236261974" />
+    <state width="1827" height="275" key="GridCell.Tab.0.left/70.27.1850.1053/1920.0.1920.1080@70.27.1850.1053" timestamp="1585225591765" />
+    <state width="1827" height="275" key="GridCell.Tab.0.right" timestamp="1585236261974">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1827" height="275" key="GridCell.Tab.0.right/70.27.1850.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585236261974" />
+    <state width="1827" height="275" key="GridCell.Tab.0.right/70.27.1850.1053/1920.0.1920.1080@70.27.1850.1053" timestamp="1585225591765" />
+  </component>
+</project>

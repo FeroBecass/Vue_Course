@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chaset='utf-8'>
+        <title>VueJs</title>
+        <script src='../vue.js'></script>
+    </head>
+    <body>
+        <div id="ex">
+            <div>
+                <button @click="show = !show">Toggle</button>
+                <p v-if="show">You either see me ...</p>
+                <p v-else>... or me</p>
+            </div>
+
+            <hr>
+            <ul>
+                <li v-for="(name, i) in names">{{ name }} ({{i}})</li>
+            </ul>
+
+            <ul>
+                <div v-for="(value, key, i) in film">{{key}}: {{value}} ({{i}})</div>
+            </ul>
+
+            <hr>
+           
+                <template v-for="value in test">
+                    <p v-if="!Array.isArray(value)"> {{value}}</p>
+                    <p v-else v-for="n in value">{{n}}</p>
+                </template>
+            
+
+        </div>
+        <script>
+            new Vue({
+                el: '#ex',
+                data: {
+                    show: true,
+                    names: ['B', 'J', 'M', 'A'],
+                    film: {title: 'Lord of Rings', author: 'J.R.R Tolkiens', books: '3'},
+                    test: {name: 'TESTOBJECT', data: [1.67, 1.33,  0.98, 2.21]}
+                }
+            })
+    
+        </script>
+    
+    </body>
+</html>

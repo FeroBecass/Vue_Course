@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta chaset='utf-8'>
+        <title>VueJs</title>
+        <script src="../vue.js"></script>
+    </head>
+    <body>
+        <div id="ex1">
+            <p>VueJs is pretty cool - {{ name }} ({{ age }})</p>
+
+            <p >{{ age * 3 }}</p>
+
+            <p>{{ numberBet0and1() }}</p>
+
+            <img v-bind:src="link" style="width:100px;height:100px">
+
+            <div>
+                <input type="text" v-bind:value="name">
+            </div>
+        </div>
+
+        <script>
+            new Vue({
+                el: '#ex1',
+                data: {
+                    name: 'Bernardo',
+                    age: '20',
+                    link: 'https://miro.medium.com/max/336/1*pGy-6nXDuV9nJGisB_l6tQ.jpeg'
+                },
+                methods: {
+                    numberBet0and1: function(){
+                        return Math.random();
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>

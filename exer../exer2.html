@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chaset='utf-8'>
+        <title>VueJs</title>
+        <script src='../vue.js'></script>
+    </head>
+    <body>
+        <div id="exer">
+            <div>
+                <button v-on:click="showAlert">Show Alert</button>
+            </div>
+
+            <div>
+                <input type="text" v-on:keydown.enter="getInputValue">
+                <p>{{ value }}</p>
+            </div>
+
+        </div>
+
+        <script>
+            new Vue({
+                el: "#exer",
+                data:{
+                    value: ''
+                },
+                methods:{
+                    showAlert: function(){
+                        alert("Helloooooooooooooo");
+                    },
+                    getInputValue(event){
+                        this.value = event.target.value;
+                    }
+                }
+            })
+        </script>
+     
+    </body>
+</html>

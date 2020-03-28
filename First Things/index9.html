@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>First Comp</title>
+        <script src='../vue.js'></script>
+    </head>
+    <body>
+        <div id="app">
+            <my-comp></my-comp>
+            <hr>
+            <my-comp></my-comp>
+        </div>
+        <script>
+            var cmp = {
+                data: function () {
+                    return {
+                        status: 'Critical'
+                    }
+                },
+                template: '<p> Server Status: {{ status }} (<button @click="">Change</button>)</p>'
+            };
+
+            new Vue({
+                el: '#app',
+                components: {
+                    'my-cmp': cmp
+                }
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chaset='utf-8'>
+        <title>VueJs</title>
+        <script src='../vue.js'></script>
+    </head>
+    <body>
+        <div id="ex">
+
+            <div>
+                <p>Current Value: {{value}}</p>
+                <button @click="value += 5">Add 5</button>
+                <button @click="value += 1">Add 1</button>
+                <p>{{result}}</p>
+
+                <div>
+                    <input type="text">
+                    <p>{{value}}</p>
+                </div>
+            </div>
+        </div>
+     
+        <script>
+            new Vue({
+                el: "#ex",
+
+                data: {
+                    value: 0,
+                },
+                computed: {
+                    result: function(){
+                        return this.value <= 37 ? 'not there yet' : 'done'
+                    }
+                },
+                watch: {
+                    result: function(){
+                        var vm = this;
+                       setTimeout( function(){
+                            vm.value = 0;
+                       }, 5000);
+                    }
+                }
+            })
+        </script>
+    
+    </body>
+</html>

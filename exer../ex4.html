@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chaset='utf-8'>
+        <title>VueJs</title>
+        <script src='../vue.js'></script>
+        <style>
+            #effect {
+                width: 100px;
+                height: 100px;
+                border: 1px solid black;
+            }
+
+            .highligtht {
+                background-color: red;
+                width: 200px !important;
+            }
+
+            .shrink {
+                background-color: gray;
+                width: 50px !important;   
+            }
+
+            .blue{
+                background-color: blue;
+            }
+
+            .float {
+                float: right;
+            }
+
+            .text-color{
+                color: yellow;
+            }
+
+            .visible {
+                width: 100px;
+                height: 50px;
+            }
+
+            .progress {
+                width: 200px;
+                height: 20px;
+                border: 1px solid black;
+            }
+
+        
+        </style>
+    </head>
+    <body>
+
+        <div id="ex3">
+            <div>
+                <button @click="startEffect">Start Effect</button>
+                <div id="effect" v-bind:class="effectClasses"></div>
+            </div>
+
+            <div id="change" v-bind:class="[float, 'blue', 'text-color']">I got no class</div>
+
+            <div>
+                <input type="text" v-model="userClass">
+                <div v-bind:class="[{visible : true}, userClass]"></div>
+            </div>
+
+            <div>
+                <input type="text" v-model="userClass">
+                <input type="text" v-model="isVisible">
+                <div v-bind:class="[{visible : isVisible}, userClass]"></div>
+            </div>
+
+            <div>
+                <input type="text" v-model="myStyle.backgroundColor">
+                <div v-bind:style="myStyle"></div>
+            </div>
+
+            <div>
+                <button v-on:click="startProgress">Start Progress</button>
+                <div v-bind:class="['progress']" v-bind:style="startProgress"></div>
+            </div>
+        </div>
+
+
+     
+        <script>
+            new Vue({
+                el: "#ex3",
+                data:{
+                    effectClasses : {
+                        highligtht: false,
+                        shrink:  true
+                    },
+                    float: 'float',
+                    userClass: '',
+                    isVisible: true,
+                    myStyle:{
+                        width: '100px',
+                        height: '150px',
+                        backgroundColor: 'gray'
+                    },
+                    progressBar: {
+                        width: '0px',
+                        backgroundColor: 'red'
+                    }
+                },
+                methods: {
+                    startEffect: function(){
+                        var vm = this;
+                        setInterval(function(){
+                            vm.effectClasses.highligtht = !vm.effectClasses.highligtht;
+                            vm.effectClasses.shrink = !vm.effectClasses.shrink;
+                        },500);
+                    },
+
+                    startProgress: function(){
+                        var vm = this;
+                        var width = 0;
+                        setInterval(function(){
+                            width = width + 10;
+                            vm.progressBar.width = width + 'px'
+                        } ,500);
+                    }
+                }
+            })
+        </script>
+    
+    </body>
+</html>

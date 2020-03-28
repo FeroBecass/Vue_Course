@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chaset='utf-8'>
+        <title>VueJs</title>
+        <script src='../vue.js'></script>
+    </head>
+    <body>
+
+        <div id="app">
+            <button @:click="changelink">Click to Change Link</button>
+            <a :href="link">Link</a>
+        </div>
+     
+        <script>
+            new Vue({
+                el: "#app",
+                data: {
+                    link: 'http://google.com'
+                },
+                methods:{
+                    changeLink: function(){
+                        this.link = 'http://apple.com'
+                    }
+                }
+            })
+        </script>
+    
+    </body>
+</html>
